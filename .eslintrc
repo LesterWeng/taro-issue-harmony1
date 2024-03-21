@@ -1,0 +1,22 @@
+{
+  "extends": ["taro/react"],
+  "plugins": ["prettier", "@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "globals": {
+    // @tarojs/helper 的 readConfig
+    "definePageConfig": "readonly",
+    "defineAppConfig": "readonly"
+  },
+  "rules": {
+    "prettier/prettier": ["error", {}],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/self-closing-comp": ["error"],
+    "react-hooks/exhaustive-deps": "off",
+    "jsx-quotes": "off",
+    // 文件和目录名称校验开关
+    // "check-file/filename-naming-convention": "off",
+    // "check-file/folder-naming-convention": "off",
+    "react/no-unused-state": "off"
+  }
+}
